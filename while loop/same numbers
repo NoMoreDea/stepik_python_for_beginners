@@ -1,0 +1,13 @@
+num = int(input())
+same_n = True
+while same_n != False and num // 10 != 0:
+    l_digit = num % 10
+    p_digit = (num // 10) % 10
+    if l_digit != p_digit:
+        same_n = False
+    num //= 10
+    print(l_digit, p_digit)
+if same_n == True:
+    print("YES")
+elif same_n == False:
+    print("NO")
